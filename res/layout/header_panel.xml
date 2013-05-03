@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_gradiant"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/btnAddURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        android:src="@drawable/add_icon" />
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/rss_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgAppIcon"
+        android:text="@string/rss_reader"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_orange" />
+
+</RelativeLayout>

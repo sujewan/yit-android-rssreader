@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white" >
+
+    <!-- Header -->
+    <include 
+        layout="@layout/header_panel" />
+    
+    <!-- ListView -->
+    <ListView 
+        android:id="@+id/lstRSSItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_light_grey"
+        android:dividerHeight="@dimen/dimension_listview_divider_height"
+        android:listSelector="@drawable/list_selector"
+        android:layout_below="@+id/layoutHeader">
+    </ListView>
+
+
+</RelativeLayout>

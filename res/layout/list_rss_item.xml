@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_selector"
+    android:padding="5dp" >
+    
+     <!-- Link -->
+
+    <TextView
+        android:id="@+id/rssItemLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/rssTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:paddingBottom="4dip"
+        android:paddingLeft="8dip"
+        android:paddingTop="8dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_black" />
+
+    <!-- Date -->
+
+    <TextView
+        android:id="@+id/rssDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rssTitle"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_orange" />
+    
+    <!-- Contents -->
+
+    <TextView
+        android:id="@+id/rssContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rssDate"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_light_grey" />
+
+    <!-- Arrow Image -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

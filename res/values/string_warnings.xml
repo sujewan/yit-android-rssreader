@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_valid_url">Enter valid url</string>
+    <string name="warning_website_url_null_check">Please type url</string>
+</resources>

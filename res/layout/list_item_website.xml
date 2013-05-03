@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_selector"
+    android:padding="5dp" >
+
+    <!-- Item ID -->
+
+    <TextView
+        android:id="@+id/websiteID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/websiteTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:paddingBottom="4dip"
+        android:paddingLeft="8dip"
+        android:paddingTop="8dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_black" />
+
+    <!-- URL -->
+
+    <TextView
+        android:id="@+id/websiteLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/websiteTitle"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_orange" />
+
+    <!-- Arrow Image -->
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow" />
+    
+</RelativeLayout>
